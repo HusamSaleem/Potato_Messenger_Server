@@ -19,4 +19,12 @@ really meant for anything outside of personal use or just for fun. Almost 5k lin
 - When you click the same chat (Either a global chat room or private) it will duplicate the messages
 - The knowing when your friends are online is sometimes glitchy and doesn't work
 
-# How to setup
+# How to setup (Linux/Windows)
+- First you need MySQL installed. 
+- Next you need to set up a username and password for MySQL. Then you need to create a database. Remember all of these! (There are many tutorials out there explaining how to do these steps)
+- Next go to src/ServerPackage/MySqlConn.java
+- In this class, you will see three things you need to change, 1. the database name, the username and the password of your MySQL local account
+- Next we do need to set up port forwarding (TCP connection). (Again there are very good tutorials out there for this step)
+- The default port I have this server listen on is *9663*. You can change this in src/ServerPackage/Server.Java where you should see a PORT variable that you can change.
+- Now the server should run and display these two lines, "Database Connection has been established!", and "Server is listening on port (Your port goes here)". 
+- Next we have to set up the client side if you have not already. This repo can be found here: https://github.com/HusamSaleem/Potato_Messenger_Client
