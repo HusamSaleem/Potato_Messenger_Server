@@ -27,5 +27,6 @@ really meant for anything outside of personal use or just for fun. Almost 5k lin
 - Next we do need to set up port forwarding (TCP connection). (Again there are very good tutorials out there for this step)
 - The default port I have this server listen on is *9663*. You can change this in src/ServerPackage/Server.Java where you should see a PORT variable that you can change.
 - * To run the server in Linux you must be in the src directory, we must compile everything using this line -> javac -cp "java-json.jar:mysql-connector-java-8.0.21.jar ChatImplementations/*.java Interfaces/*.java SerializationClasses/*.java ServerPackage/*.java" (Without quotes) Then we can run the server by using this line -> "java -cp .:java-json.jar:mysql-connector-java-8.0.21.jar ServerPackage.Server"
+- * Also you might have to change the .classpath file to link the two external libraries (java-json & mysql-connector) *
 - Now the server should run and display these two lines, "Database Connection has been established!", and "Server is listening on port (Your port goes here)". 
 - Next we have to set up the client side if you have not already. This repo can be found here: https://github.com/HusamSaleem/Potato_Messenger_Client
