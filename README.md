@@ -1,1 +1,1 @@
-# Potato_Messenger_Server2
+# Potato Messenger Server
